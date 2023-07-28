@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limited Time Offer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="top-nav">
+      <h1>Exam<span>Labs</span></h1>
+      <h1>Secure One-Step Checkout</h1>
+      <h2>Your Product will Become available Immedietely After Purchase</h2>
+    </div>
+    <div class="offer-container">
+      <div class="limited-time">
+        <img id="clock-img" src="clock-img.png" alt="" />
+        <h2>Limited Time Offer</h2>
+      </div>
+      <h2 id="timer" class="timer-container">
+        Ends In : <span id="countdown"></span>
+      </h2>
+      <div class="coupon-container">
+        <h2>GET 10% off</h2>
+        <span>Use Code : </span>
+        <h2>EXAMSTART</h2>
+      </div>
+    </div>
+
+    <div class="checkout-container">
+      <div class="product-container">
+        <h2>Review your order</h2>
+        <p>The following items have been added to your shopping cart</p>
+        <table class="responsive-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Product Description</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                Microsoft 193 Premium Bundle
+                <p>Premium file</p>
+                <p>Training Course</p>
+                <p>Get new Question updates for</p>
+                <button>30 Days (free)</button>
+              </td>
+              <td>
+                <p id="original-price">price : $50</p>
+
+                <p id="discounted-price">Discounted Price: $50</p>
+                <p id="coupon-applied"></p>
+              </td>
+              <td>
+                <button class="remove-button">Remove</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="apply-coupon-container">
+        <div class="satisfaction-container">
+          <div class="success">
+            <img src="./success.jpg" alt="success-image" />
+            <div>
+              <h2>Satisfaction Guaranteed</h2>
+              <p><strong>98.4% </strong> Pass Rate</p>
+            </div>
+          </div>
+          <div>
+            Our team works hard to provide students with high exam practice test
+            questions and compelling learning experiences. We're confident of
+            the quality level of the products we offer and provide no hassle
+            satisfaction guarantee.
+          </div>
+        </div>
+        <div class="satisfied-guarenteed"></div>
+        <h3>Apply coupon code:</h3>
+        <input type="text" id="coupon-code" placeholder="Enter Coupon Code" />
+        <button id="apply-coupon-btn">Apply Coupon</button><br />
+        <button id="payment-success">Payment</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts.js"></script>
